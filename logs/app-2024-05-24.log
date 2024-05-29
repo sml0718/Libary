@@ -1,0 +1,676 @@
+2024-05-24 14:14:36 - com.zaxxer.hikari.pool.HikariPool - WARN - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20h33m45s121ms151µs900ns).
+2024-05-24 14:15:24 - c.b.controller.copy.UserController - INFO - ユーザー名:sakura,パスワード:
+2024-05-24 14:15:30 - c.b.controller.copy.UserController - INFO - ユーザー名:sakura,パスワード:123
+2024-05-24 14:15:30 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 14:22:01 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 14:22:36 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 14:31:36 - c.b.controller.copy.UserController - INFO - ユーザー名:wawa,名前:wawa,パスワード:123,性別:true,検証コード:9B5D
+2024-05-24 14:32:10 - c.b.controller.copy.UserController - INFO - ユーザー名:sakura,パスワード:123
+2024-05-24 14:32:10 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 14:33:32 - c.b.controller.copy.BooksController - INFO - 更新ID:8
+2024-05-24 14:33:36 - c.b.controller.copy.BooksController - INFO - 更新した本：8,本の名前:小刘,作家:急急急,値段:2300.0
+2024-05-24 14:33:36 - c.b.controller.copy.BooksController - INFO - 写真更新するかどうが:false
+2024-05-24 14:33:36 - com.book.aop.LogAspect - INFO - AOP操作のレコード:1,2024-05-24T14:33:36.873999600,com.book.controller.copy.BooksController,update,[Books(id=8, name=小刘, author=急急急, price=2300.0, photo=eu_mic-short_chi_mickey_r_fd57c75520240523164717018.jpeg), org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@6bde073a],redirect:/books/lists,13
+2024-05-24 14:33:36 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 14:33:42 - o.s.w.s.m.s.DefaultHandlerExceptionResolver - WARN - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public java.lang.String com.book.controller.copy.BooksController.save(com.book.entity.Books,org.springframework.web.multipart.MultipartFile) throws java.lang.IllegalStateException,java.io.IOException: [Field error in object 'books' on field 'price': rejected value []; codes [typeMismatch.books.price,typeMismatch.price,typeMismatch.double,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [books.price,price]; arguments []; default message [price]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'double' for property 'price'; empty String]] ]
+2024-05-24 14:38:07 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 14:38:28 - o.s.w.s.m.s.DefaultHandlerExceptionResolver - WARN - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public java.lang.String com.book.controller.copy.BooksController.save(com.book.entity.Books,org.springframework.web.multipart.MultipartFile) throws java.lang.IllegalStateException,java.io.IOException: [Field error in object 'books' on field 'price': rejected value []; codes [typeMismatch.books.price,typeMismatch.price,typeMismatch.double,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [books.price,price]; arguments []; default message [price]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'double' for property 'price'; empty String]] ]
+2024-05-24 14:46:09 - o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - INFO - Application shutdown requested.
+2024-05-24 14:46:09 - o.a.coyote.http11.Http11NioProtocol - INFO - Stopping ProtocolHandler ["http-nio-20254"]
+2024-05-24 14:46:09 - com.zaxxer.hikari.HikariDataSource - INFO - HikariPool-1 - Shutdown initiated...
+2024-05-24 14:46:09 - com.zaxxer.hikari.HikariDataSource - INFO - HikariPool-1 - Shutdown completed.
+2024-05-24 14:46:11 - com.book.BookApplication - INFO - Starting BookApplication using Java 17.0.10 with PID 36092 (C:\pleiades\2023-12\workspace\book\target\classes started by 59220 in C:\pleiades\2023-12\workspace\book)
+2024-05-24 14:46:11 - com.book.BookApplication - INFO - No active profile set, falling back to 1 default profile: "default"
+2024-05-24 14:46:11 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - INFO - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-24 14:46:11 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - INFO - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-24 14:46:13 - o.s.b.w.e.tomcat.TomcatWebServer - INFO - Tomcat initialized with port 20254 (http)
+2024-05-24 14:46:13 - o.a.coyote.http11.Http11NioProtocol - INFO - Initializing ProtocolHandler ["http-nio-20254"]
+2024-05-24 14:46:13 - o.a.catalina.core.StandardService - INFO - Starting service [Tomcat]
+2024-05-24 14:46:13 - o.a.catalina.core.StandardEngine - INFO - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-24 14:46:13 - o.a.c.c.C.[.[.[/bookthymeleaf] - INFO - Initializing Spring embedded WebApplicationContext
+2024-05-24 14:46:13 - o.s.b.w.s.c.ServletWebServerApplicationContext - INFO - Root WebApplicationContext: initialization completed in 1470 ms
+2024-05-24 14:46:13 - o.s.b.d.a.OptionalLiveReloadServer - INFO - LiveReload server is running on port 35729
+2024-05-24 14:46:13 - o.a.coyote.http11.Http11NioProtocol - INFO - Starting ProtocolHandler ["http-nio-20254"]
+2024-05-24 14:46:14 - o.s.b.w.e.tomcat.TomcatWebServer - INFO - Tomcat started on port 20254 (http) with context path '/bookthymeleaf'
+2024-05-24 14:46:14 - com.book.BookApplication - INFO - Started BookApplication in 2.967 seconds (process running for 3.926)
+2024-05-24 14:46:18 - o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - INFO - Application shutdown requested.
+2024-05-24 14:46:18 - o.a.coyote.http11.Http11NioProtocol - INFO - Stopping ProtocolHandler ["http-nio-20254"]
+2024-05-24 15:05:03 - com.book.BookApplication - INFO - Starting BookApplication using Java 17.0.10 with PID 32024 (C:\pleiades\2023-12\workspace\book\target\classes started by 59220 in C:\pleiades\2023-12\workspace\book)
+2024-05-24 15:05:03 - com.book.BookApplication - INFO - No active profile set, falling back to 1 default profile: "default"
+2024-05-24 15:05:03 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - INFO - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-24 15:05:03 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - INFO - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-24 15:05:05 - o.s.b.w.e.tomcat.TomcatWebServer - INFO - Tomcat initialized with port 20254 (http)
+2024-05-24 15:05:05 - o.a.coyote.http11.Http11NioProtocol - INFO - Initializing ProtocolHandler ["http-nio-20254"]
+2024-05-24 15:05:05 - o.a.catalina.core.StandardService - INFO - Starting service [Tomcat]
+2024-05-24 15:05:05 - o.a.catalina.core.StandardEngine - INFO - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-24 15:05:05 - o.a.c.c.C.[.[.[/bookthymeleaf] - INFO - Initializing Spring embedded WebApplicationContext
+2024-05-24 15:05:05 - o.s.b.w.s.c.ServletWebServerApplicationContext - INFO - Root WebApplicationContext: initialization completed in 1408 ms
+2024-05-24 15:05:06 - o.s.b.d.a.OptionalLiveReloadServer - INFO - LiveReload server is running on port 35729
+2024-05-24 15:05:06 - o.a.coyote.http11.Http11NioProtocol - INFO - Starting ProtocolHandler ["http-nio-20254"]
+2024-05-24 15:05:06 - o.s.b.w.e.tomcat.TomcatWebServer - INFO - Tomcat started on port 20254 (http) with context path '/bookthymeleaf'
+2024-05-24 15:05:06 - com.book.BookApplication - INFO - Started BookApplication in 2.763 seconds (process running for 3.709)
+2024-05-24 15:05:10 - o.a.c.c.C.[.[.[/bookthymeleaf] - INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-24 15:05:10 - o.s.web.servlet.DispatcherServlet - INFO - Initializing Servlet 'dispatcherServlet'
+2024-05-24 15:05:10 - o.s.web.servlet.DispatcherServlet - INFO - Completed initialization in 1 ms
+2024-05-24 15:07:44 - o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - INFO - Application shutdown requested.
+2024-05-24 15:07:44 - o.a.coyote.http11.Http11NioProtocol - INFO - Stopping ProtocolHandler ["http-nio-20254"]
+2024-05-24 15:07:47 - com.book.BookApplication - INFO - Starting BookApplication using Java 17.0.10 with PID 8428 (C:\pleiades\2023-12\workspace\book\target\classes started by 59220 in C:\pleiades\2023-12\workspace\book)
+2024-05-24 15:07:47 - com.book.BookApplication - INFO - No active profile set, falling back to 1 default profile: "default"
+2024-05-24 15:07:47 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - INFO - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-24 15:07:47 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - INFO - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-24 15:07:48 - o.s.b.w.e.tomcat.TomcatWebServer - INFO - Tomcat initialized with port 20254 (http)
+2024-05-24 15:07:48 - o.a.coyote.http11.Http11NioProtocol - INFO - Initializing ProtocolHandler ["http-nio-20254"]
+2024-05-24 15:07:48 - o.a.catalina.core.StandardService - INFO - Starting service [Tomcat]
+2024-05-24 15:07:48 - o.a.catalina.core.StandardEngine - INFO - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-24 15:07:48 - o.a.c.c.C.[.[.[/bookthymeleaf] - INFO - Initializing Spring embedded WebApplicationContext
+2024-05-24 15:07:48 - o.s.b.w.s.c.ServletWebServerApplicationContext - INFO - Root WebApplicationContext: initialization completed in 1418 ms
+2024-05-24 15:07:49 - o.s.b.d.a.OptionalLiveReloadServer - INFO - LiveReload server is running on port 35729
+2024-05-24 15:07:49 - o.a.coyote.http11.Http11NioProtocol - INFO - Starting ProtocolHandler ["http-nio-20254"]
+2024-05-24 15:07:49 - o.s.b.w.e.tomcat.TomcatWebServer - INFO - Tomcat started on port 20254 (http) with context path '/bookthymeleaf'
+2024-05-24 15:07:49 - com.book.BookApplication - INFO - Started BookApplication in 2.883 seconds (process running for 3.842)
+2024-05-24 15:07:52 - o.a.c.c.C.[.[.[/bookthymeleaf] - INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-24 15:07:52 - o.s.web.servlet.DispatcherServlet - INFO - Initializing Servlet 'dispatcherServlet'
+2024-05-24 15:07:52 - o.s.web.servlet.DispatcherServlet - INFO - Completed initialization in 1 ms
+2024-05-24 15:09:21 - o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - INFO - Application shutdown requested.
+2024-05-24 15:09:21 - o.a.coyote.http11.Http11NioProtocol - INFO - Stopping ProtocolHandler ["http-nio-20254"]
+2024-05-24 15:09:23 - com.book.BookApplication - INFO - Starting BookApplication using Java 17.0.10 with PID 38240 (C:\pleiades\2023-12\workspace\book\target\classes started by 59220 in C:\pleiades\2023-12\workspace\book)
+2024-05-24 15:09:23 - com.book.BookApplication - INFO - No active profile set, falling back to 1 default profile: "default"
+2024-05-24 15:09:23 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - INFO - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-24 15:09:23 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - INFO - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-24 15:09:25 - o.s.b.w.e.tomcat.TomcatWebServer - INFO - Tomcat initialized with port 20254 (http)
+2024-05-24 15:09:25 - o.a.coyote.http11.Http11NioProtocol - INFO - Initializing ProtocolHandler ["http-nio-20254"]
+2024-05-24 15:09:25 - o.a.catalina.core.StandardService - INFO - Starting service [Tomcat]
+2024-05-24 15:09:25 - o.a.catalina.core.StandardEngine - INFO - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-24 15:09:25 - o.a.c.c.C.[.[.[/bookthymeleaf] - INFO - Initializing Spring embedded WebApplicationContext
+2024-05-24 15:09:25 - o.s.b.w.s.c.ServletWebServerApplicationContext - INFO - Root WebApplicationContext: initialization completed in 1393 ms
+2024-05-24 15:09:26 - o.s.b.d.a.OptionalLiveReloadServer - INFO - LiveReload server is running on port 35729
+2024-05-24 15:09:26 - o.a.coyote.http11.Http11NioProtocol - INFO - Starting ProtocolHandler ["http-nio-20254"]
+2024-05-24 15:09:26 - o.s.b.w.e.tomcat.TomcatWebServer - INFO - Tomcat started on port 20254 (http) with context path '/bookthymeleaf'
+2024-05-24 15:09:26 - com.book.BookApplication - INFO - Started BookApplication in 2.677 seconds (process running for 3.602)
+2024-05-24 15:14:20 - o.a.c.c.C.[.[.[/bookthymeleaf] - INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-24 15:14:20 - o.s.web.servlet.DispatcherServlet - INFO - Initializing Servlet 'dispatcherServlet'
+2024-05-24 15:14:20 - o.s.web.servlet.DispatcherServlet - INFO - Completed initialization in 1 ms
+2024-05-24 15:38:27 - o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - INFO - Application shutdown requested.
+2024-05-24 15:38:27 - o.a.coyote.http11.Http11NioProtocol - INFO - Stopping ProtocolHandler ["http-nio-20254"]
+2024-05-24 15:38:31 - com.book.BookApplication - INFO - Starting BookApplication using Java 17.0.10 with PID 42120 (C:\pleiades\2023-12\workspace\book\target\classes started by 59220 in C:\pleiades\2023-12\workspace\book)
+2024-05-24 15:38:31 - com.book.BookApplication - INFO - No active profile set, falling back to 1 default profile: "default"
+2024-05-24 15:38:31 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - INFO - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-24 15:38:31 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - INFO - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-24 15:38:32 - o.s.b.w.e.tomcat.TomcatWebServer - INFO - Tomcat initialized with port 20254 (http)
+2024-05-24 15:38:32 - o.a.coyote.http11.Http11NioProtocol - INFO - Initializing ProtocolHandler ["http-nio-20254"]
+2024-05-24 15:38:32 - o.a.catalina.core.StandardService - INFO - Starting service [Tomcat]
+2024-05-24 15:38:32 - o.a.catalina.core.StandardEngine - INFO - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-24 15:38:32 - o.a.c.c.C.[.[.[/bookthymeleaf] - INFO - Initializing Spring embedded WebApplicationContext
+2024-05-24 15:38:32 - o.s.b.w.s.c.ServletWebServerApplicationContext - INFO - Root WebApplicationContext: initialization completed in 1373 ms
+2024-05-24 15:38:33 - o.s.b.d.a.OptionalLiveReloadServer - INFO - LiveReload server is running on port 35729
+2024-05-24 15:38:33 - o.a.coyote.http11.Http11NioProtocol - INFO - Starting ProtocolHandler ["http-nio-20254"]
+2024-05-24 15:38:33 - o.s.b.w.e.tomcat.TomcatWebServer - INFO - Tomcat started on port 20254 (http) with context path '/bookthymeleaf'
+2024-05-24 15:38:33 - com.book.BookApplication - INFO - Started BookApplication in 2.729 seconds (process running for 3.678)
+2024-05-24 15:46:33 - o.a.c.c.C.[.[.[/bookthymeleaf] - INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-24 15:46:33 - o.s.web.servlet.DispatcherServlet - INFO - Initializing Servlet 'dispatcherServlet'
+2024-05-24 15:46:33 - o.s.web.servlet.DispatcherServlet - INFO - Completed initialization in 1 ms
+2024-05-24 16:51:24 - c.b.controller.copy.UserController - INFO - ユーザー名:jqqq,名前:sdfs,パスワード:123,性別:false,検証コード:cd6f
+2024-05-24 16:51:24 - com.zaxxer.hikari.HikariDataSource - INFO - HikariPool-1 - Starting...
+2024-05-24 16:51:24 - c.b.controller.copy.UserController - INFO - ユーザー名:jqqq,名前:sdfs,パスワード:123,性別:false,検証コード:cd6f
+2024-05-24 16:51:24 - com.zaxxer.hikari.pool.HikariPool - INFO - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@53666c28
+2024-05-24 16:51:24 - com.zaxxer.hikari.HikariDataSource - INFO - HikariPool-1 - Start completed.
+2024-05-24 16:51:29 - c.b.controller.copy.UserController - INFO - ユーザー名:sakura,パスワード:123
+2024-05-24 16:51:30 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 16:58:21 - c.b.controller.copy.UserController - INFO - ユーザー名:sakura,パスワード:123
+2024-05-24 16:58:21 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 16:58:25 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 16:58:55 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 16:58:56 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 16:59:02 - c.b.controller.copy.BooksController - INFO - 本の名前:,作家:,最低値段:,最高値段:,
+2024-05-24 16:59:13 - c.b.controller.copy.UserController - INFO - ユーザー名:tom,パスワード:123
+2024-05-24 16:59:13 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:00:20 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:00:20 - org.thymeleaf.TemplateEngine - ERROR - [THYMELEAF][http-nio-20254-exec-7] Exception processing template "emplist": An error happened during template parsing (template: "class path resource [templates/emplist.html]" - line 16, col 50)
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/emplist.html]" - line 16, col 50)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:239)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.attoparser.ParseException: (Line = 16, Column = 50) Incomplete structure: "</divid="nowtime>
+	                    <br/>
+	                    <a th:href="@{/user/logout}">安全退出</a>
+	                </p>
+	            </div>
+	            <div id="topheader">
+	                <h1 id="title">
+	                    <a href="/ems_vue/emplist.html">main</a>
+	                </h1>
+	            	
+	            </div>
+	            <div id="navigation">
+	            </div>
+	        </div>
+	        <div id="content">
+	            <p id="whereami">
+	            </p>
+	            <h1>
+	                ようこそ<span th:if="${session.user!=null}" th:text="${session.user.realname}"></span>
+	            	<span th:if="${session.user==null}">ゲスト</span>
+	            </h1>
+	            <div style="margin-bottom:10px; text-align: right;">
+	                 <form th:action="@{/books/search}" method="post" >
+					    
+					    本の名前<input type="text" class="inputsearch" name="searchName" style="width: 60px"
+					    />
+					    作家<input type="text" class="inputsearch" name="searchAuthor" style="width: 60px"/>
+					    値段<input type="text" class="inputsearch" name="lowPrice" style="width: 60px"
+					    />
+					    	<input type="text" class="inputsearch" name="topPrice" style="width: 60px"/>
+					    <input type="submit" class="button" value="検索" />
+					    <div><span></span><span></span></div>
+			 
+					  </form>
+				</div>
+	            <table class="table">
+	                <tr class="table_header">
+	                    <td>
+	                        ID
+	                    </td>
+	                    <td>
+	                        本の名前
+	                    </td>
+	                    <td>
+	                        作家
+	                    </td>
+	                    <td>
+	                        値段
+	                    </td>
+	                    <td>
+	                        写真
+	                    </td>
+	                    <td>
+	                        操作
+	                    </td>
+	                </tr>
+	                <tr th:each="books,state:${BooksList}" th:class="${state.odd?'row1':'row2'}">
+	                    <td>
+	                       <span th:text="${books.id}"/>
+	                    </td>
+	                    <td>
+	                       <span th:text="${books.name}"/> 
+	                    </td>
+	                    <td>
+	                     	<span th:text="${books.author}"/>
+	                    </td>
+	                    <td>
+	                        <span th:text="${books.price}"/>
+	                    </td>
+	                    <td>
+	                        <img th:src="@{/}+${books.photo}" style="height: 40px;">
+	                    </td>
+	                    <td>
+	                        <a href="javascript:;" th:onclick="'delEmp('+${books.id}+')'">削除</a>&nbsp;
+	                        <a th:href="@{/books/detail(id=${books.id})}">更新</a>
+	                    </td>
+	                </tr>
+	            </table>
+	            <p>
+	                <input type="button" class="button" value="本を追加する" onclick="addEmp()"/>
+	            </p>
+	            <script>
+					function addEmp(){
+						location.href='[[@{/addEmp}]]'
+					}
+					function delEmp(id){
+						console.log(id)
+						if(window.confirm("この本の情報を削除してがいいですが")){
+							location.href="[[@{/books/delete?id=}]]"+id
+						}
+					}
+				</script>
+	        </div>
+	    </div>
+	    <div id="footer">
+	        <div id="footer_bg">
+	            ABC@126.com
+	        </div>
+	    </div>
+	</div>
+</div>
+</body>
+</html>
+<script>
+  
+        const nowtime = document.querySelector('#nowtime')
+		gettime()
+        setInterval(()=>{
+            //nowtime.innerHTML=gettime();
+            nowtime.innerHTML=gettime();
+        },1000)
+ </script>"
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:366)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+2024-05-24 17:00:20 - o.a.c.c.C.[.[.[.[dispatcherServlet] - ERROR - Servlet.service() for servlet [dispatcherServlet] in context with path [/bookthymeleaf] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/emplist.html]" - line 16, col 50)] with root cause
+org.attoparser.ParseException: (Line = 16, Column = 50) Incomplete structure: "</divid="nowtime>
+	                    <br/>
+	                    <a th:href="@{/user/logout}">安全退出</a>
+	                </p>
+	            </div>
+	            <div id="topheader">
+	                <h1 id="title">
+	                    <a href="/ems_vue/emplist.html">main</a>
+	                </h1>
+	            	
+	            </div>
+	            <div id="navigation">
+	            </div>
+	        </div>
+	        <div id="content">
+	            <p id="whereami">
+	            </p>
+	            <h1>
+	                ようこそ<span th:if="${session.user!=null}" th:text="${session.user.realname}"></span>
+	            	<span th:if="${session.user==null}">ゲスト</span>
+	            </h1>
+	            <div style="margin-bottom:10px; text-align: right;">
+	                 <form th:action="@{/books/search}" method="post" >
+					    
+					    本の名前<input type="text" class="inputsearch" name="searchName" style="width: 60px"
+					    />
+					    作家<input type="text" class="inputsearch" name="searchAuthor" style="width: 60px"/>
+					    値段<input type="text" class="inputsearch" name="lowPrice" style="width: 60px"
+					    />
+					    	<input type="text" class="inputsearch" name="topPrice" style="width: 60px"/>
+					    <input type="submit" class="button" value="検索" />
+					    <div><span></span><span></span></div>
+			 
+					  </form>
+				</div>
+	            <table class="table">
+	                <tr class="table_header">
+	                    <td>
+	                        ID
+	                    </td>
+	                    <td>
+	                        本の名前
+	                    </td>
+	                    <td>
+	                        作家
+	                    </td>
+	                    <td>
+	                        値段
+	                    </td>
+	                    <td>
+	                        写真
+	                    </td>
+	                    <td>
+	                        操作
+	                    </td>
+	                </tr>
+	                <tr th:each="books,state:${BooksList}" th:class="${state.odd?'row1':'row2'}">
+	                    <td>
+	                       <span th:text="${books.id}"/>
+	                    </td>
+	                    <td>
+	                       <span th:text="${books.name}"/> 
+	                    </td>
+	                    <td>
+	                     	<span th:text="${books.author}"/>
+	                    </td>
+	                    <td>
+	                        <span th:text="${books.price}"/>
+	                    </td>
+	                    <td>
+	                        <img th:src="@{/}+${books.photo}" style="height: 40px;">
+	                    </td>
+	                    <td>
+	                        <a href="javascript:;" th:onclick="'delEmp('+${books.id}+')'">削除</a>&nbsp;
+	                        <a th:href="@{/books/detail(id=${books.id})}">更新</a>
+	                    </td>
+	                </tr>
+	            </table>
+	            <p>
+	                <input type="button" class="button" value="本を追加する" onclick="addEmp()"/>
+	            </p>
+	            <script>
+					function addEmp(){
+						location.href='[[@{/addEmp}]]'
+					}
+					function delEmp(id){
+						console.log(id)
+						if(window.confirm("この本の情報を削除してがいいですが")){
+							location.href="[[@{/books/delete?id=}]]"+id
+						}
+					}
+				</script>
+	        </div>
+	    </div>
+	    <div id="footer">
+	        <div id="footer_bg">
+	            ABC@126.com
+	        </div>
+	    </div>
+	</div>
+</div>
+</body>
+</html>
+<script>
+  
+        const nowtime = document.querySelector('#nowtime')
+		gettime()
+        setInterval(()=>{
+            //nowtime.innerHTML=gettime();
+            nowtime.innerHTML=gettime();
+        },1000)
+ </script>"
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:366)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2024-05-24 17:00:43 - c.b.controller.copy.UserController - INFO - ユーザー名:tom,パスワード:123
+2024-05-24 17:00:43 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:00:48 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:00:48 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:02:06 - c.b.controller.copy.UserController - INFO - ユーザー名:sakura,パスワード:123
+2024-05-24 17:02:06 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:02:09 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:02:09 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:02:59 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:03:00 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:03:00 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:03:35 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:03:36 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:03:36 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:03:40 - c.b.controller.copy.BooksController - INFO - 更新ID:6
+2024-05-24 17:04:29 - c.b.controller.copy.UserController - INFO - ユーザー名:sakura,パスワード:123
+2024-05-24 17:04:29 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:04:32 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:04:32 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:04:33 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:05:51 - c.b.controller.copy.UserController - INFO - ユーザー名:,名前:,パスワード:,性別:true,検証コード:
+2024-05-24 17:08:22 - c.b.controller.copy.UserController - INFO - ユーザー名:sakura,パスワード:123
+2024-05-24 17:08:22 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:08:56 - c.b.controller.copy.BooksController - INFO - ファイルの名:eu_mic-short_chi_mickey_r_fd57c755.jpeg,ファイルのサイズ：52367,アップロードあど:C:\\pleiades\\2023-12\\workspace\\book\\upload
+2024-05-24 17:08:56 - c.b.controller.copy.BooksController - INFO - 新しいファイルの名:eu_mic-short_chi_mickey_r_fd57c75520240524170856698.jpeg
+2024-05-24 17:08:56 - c.b.controller.copy.BooksController - INFO - 新しいファイルの名:eu_mic-short_chi_mickey_r_fd57c75520240524170856698.jpeg
+2024-05-24 17:08:56 - com.book.aop.LogAspect - INFO - AOP操作のレコード:1,2024-05-24T17:08:56.682629300,com.book.controller.copy.BooksController,save,[Books(id=null, name=小刘, author=tomson, price=12378.0, photo=null), org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@71d0de9],redirect:/books/lists,18
+2024-05-24 17:08:56 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:10:55 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:10:55 - org.thymeleaf.TemplateEngine - ERROR - [THYMELEAF][http-nio-20254-exec-3] Exception processing template "emplist": An error happened during template parsing (template: "class path resource [templates/emplist.html]" - line 21, col 19)
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/emplist.html]" - line 21, col 19)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:239)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.attoparser.ParseException: (Line = 21, Column = 19) Could not parse as a well-formed closing element "</div
+	            </div>": No attributes are allowed here
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:224)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+2024-05-24 17:10:55 - o.a.c.c.C.[.[.[.[dispatcherServlet] - ERROR - Servlet.service() for servlet [dispatcherServlet] in context with path [/bookthymeleaf] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/emplist.html]" - line 21, col 19)] with root cause
+org.attoparser.ParseException: (Line = 21, Column = 19) Could not parse as a well-formed closing element "</div
+	            </div>": No attributes are allowed here
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:224)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2024-05-24 17:11:26 - com.book.BookApplication - INFO - Starting BookApplication using Java 17.0.10 with PID 19804 (C:\pleiades\2023-12\workspace\book\target\classes started by 59220 in C:\pleiades\2023-12\workspace\book)
+2024-05-24 17:11:26 - com.book.BookApplication - INFO - No active profile set, falling back to 1 default profile: "default"
+2024-05-24 17:11:26 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - INFO - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-24 17:11:26 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - INFO - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-24 17:11:30 - o.s.b.w.e.tomcat.TomcatWebServer - INFO - Tomcat initialized with port 20254 (http)
+2024-05-24 17:11:30 - o.a.coyote.http11.Http11NioProtocol - INFO - Initializing ProtocolHandler ["http-nio-20254"]
+2024-05-24 17:11:30 - o.a.catalina.core.StandardService - INFO - Starting service [Tomcat]
+2024-05-24 17:11:30 - o.a.catalina.core.StandardEngine - INFO - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-24 17:11:30 - o.a.c.c.C.[.[.[/bookthymeleaf] - INFO - Initializing Spring embedded WebApplicationContext
+2024-05-24 17:11:30 - o.s.b.w.s.c.ServletWebServerApplicationContext - INFO - Root WebApplicationContext: initialization completed in 3428 ms
+2024-05-24 17:11:32 - o.s.b.d.a.OptionalLiveReloadServer - INFO - LiveReload server is running on port 35729
+2024-05-24 17:11:32 - o.a.coyote.http11.Http11NioProtocol - INFO - Starting ProtocolHandler ["http-nio-20254"]
+2024-05-24 17:11:32 - o.s.b.w.e.tomcat.TomcatWebServer - INFO - Tomcat started on port 20254 (http) with context path '/bookthymeleaf'
+2024-05-24 17:11:32 - com.book.BookApplication - INFO - Started BookApplication in 6.812 seconds (process running for 9.12)
+2024-05-24 17:11:41 - o.a.c.c.C.[.[.[/bookthymeleaf] - INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-24 17:11:41 - o.s.web.servlet.DispatcherServlet - INFO - Initializing Servlet 'dispatcherServlet'
+2024-05-24 17:11:41 - o.s.web.servlet.DispatcherServlet - INFO - Completed initialization in 3 ms
+2024-05-24 17:11:49 - c.b.controller.copy.UserController - INFO - ユーザー名:sakura,パスワード:123
+2024-05-24 17:11:49 - com.zaxxer.hikari.HikariDataSource - INFO - HikariPool-1 - Starting...
+2024-05-24 17:11:50 - com.zaxxer.hikari.pool.HikariPool - INFO - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@405ee9ed
+2024-05-24 17:11:50 - com.zaxxer.hikari.HikariDataSource - INFO - HikariPool-1 - Start completed.
+2024-05-24 17:11:50 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:11:51 - c.b.controller.copy.UserController - INFO - ユーザー名:sakura,パスワード:123
+2024-05-24 17:11:51 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:13:15 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:15:31 - o.s.w.s.m.s.DefaultHandlerExceptionResolver - WARN - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public java.lang.String com.book.controller.copy.BooksController.save(com.book.entity.Books,org.springframework.web.multipart.MultipartFile) throws java.lang.IllegalStateException,java.io.IOException: [Field error in object 'books' on field 'price': rejected value []; codes [typeMismatch.books.price,typeMismatch.price,typeMismatch.double,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [books.price,price]; arguments []; default message [price]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'double' for property 'price'; empty String]] ]
+2024-05-24 17:15:46 - c.b.controller.copy.BooksController - INFO - ファイルの名:eu_mic-short_chi_mickey_r_fd57c755.jpeg,ファイルのサイズ：52367,アップロードあど:C:\\pleiades\\2023-12\\workspace\\book\\upload
+2024-05-24 17:15:46 - c.b.controller.copy.BooksController - INFO - 新しいファイルの名:eu_mic-short_chi_mickey_r_fd57c75520240524171546076.jpeg
+2024-05-24 17:15:46 - c.b.controller.copy.BooksController - INFO - 新しいファイルの名:eu_mic-short_chi_mickey_r_fd57c75520240524171546076.jpeg
+2024-05-24 17:15:46 - com.book.aop.LogAspect - INFO - AOP操作のレコード:1,2024-05-24T17:15:46.010774100,com.book.controller.copy.BooksController,save,[Books(id=null, name=小刘, author=tomson, price=123.0, photo=null), org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@2e4ea192],redirect:/books/lists,46
+2024-05-24 17:15:46 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:18:16 - c.b.controller.copy.UserController - INFO - ユーザー名:sakura,パスワード:123
+2024-05-24 17:18:16 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:18:53 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:18:54 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:18:54 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:18:55 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:18:55 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:18:55 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:31:40 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:31:41 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:31:42 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:31:42 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:31:43 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:32:08 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:32:08 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:32:09 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:32:09 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:32:09 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:32:10 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:32:10 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:33:28 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:34:22 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:35:46 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:36:53 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:37:22 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:38:08 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:38:50 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:39:06 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:39:08 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:39:09 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:40:26 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:40:27 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:40:27 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:40:28 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:41:54 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:41:56 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:41:57 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:43:07 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:43:08 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:43:09 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:43:09 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:43:34 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-24 17:43:57 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する

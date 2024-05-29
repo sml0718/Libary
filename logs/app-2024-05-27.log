@@ -1,0 +1,430 @@
+2024-05-27 12:53:43 - com.zaxxer.hikari.pool.HikariPool - WARN - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2d19h8m58s40ms498µs).
+2024-05-27 13:09:56 - com.zaxxer.hikari.pool.HikariPool - WARN - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m42s802ms374µs500ns).
+2024-05-27 13:30:14 - com.zaxxer.hikari.pool.HikariPool - WARN - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m15s222ms892µs300ns).
+2024-05-27 13:32:35 - c.b.controller.copy.UserController - INFO - ユーザー名:sakura,パスワード:123
+2024-05-27 13:32:35 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-27 13:35:42 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-27 13:35:42 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-27 13:36:29 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-27 13:36:30 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-27 13:36:30 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-27 13:36:34 - c.b.controller.copy.BooksController - INFO - 削除の社員ID:6
+2024-05-27 13:36:34 - com.book.aop.LogAspect - INFO - AOP操作のレコード:1,2024-05-27T13:36:34.770280800,com.book.controller.copy.BooksController,delete,[6],redirect:/books/lists,14
+2024-05-27 13:36:34 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-27 13:40:24 - c.b.controller.copy.UserController - INFO - ユーザー名:sakura,パスワード:123
+2024-05-27 13:40:24 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-27 13:40:41 - c.b.controller.copy.UserController - INFO - ユーザー名:sakura,パスワード:123
+2024-05-27 13:40:41 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-27 13:48:38 - c.b.controller.copy.UserController - INFO - ユーザー名:yyyy,名前:YYY,パスワード:123,性別:true,検証コード:597C
+2024-05-27 13:49:11 - c.b.controller.copy.UserController - INFO - ユーザー名:777,名前:777,パスワード:123,性別:true,検証コード:BV4J
+2024-05-27 13:49:16 - c.b.controller.copy.UserController - INFO - ユーザー名:sakura,パスワード:123
+2024-05-27 13:49:16 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-27 13:50:21 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-27 13:51:13 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-27 13:51:38 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-27 13:52:42 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-27 13:52:42 - org.thymeleaf.TemplateEngine - ERROR - [THYMELEAF][http-nio-20254-exec-8] Exception processing template "emplist": An error happened during template parsing (template: "class path resource [templates/emplist.html]" - line 20, col 22)
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/emplist.html]" - line 20, col 22)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:239)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.attoparser.ParseException: (Line = 20, Column = 22) Incomplete structure: "<p th:href="@{/user/logout}>
+	                    安全退出
+	                	</p>
+	            </div>
+	            <div id="topheader">
+	                <h1 id="title">
+	                    <a href="/emplist.html">図書館</a>
+	                </h1>
+	            	
+	            </div>
+	            <div id="navigation">
+	            </div>
+	        </div>
+	        <div id="content">
+	            <p id="whereami">
+	            </p>
+	            <h1>
+	                ようこそ<span th:if="${session.user!=null}" th:text="${session.user.realname}"></span>
+	            	<span th:if="${session.user==null}">ゲスト</span>
+	            </h1>
+	            <div style="margin-bottom:10px; text-align: right;">
+	                 <form th:action="@{/books/search}" method="post" >
+					    
+					    本の名前<input type="text" class="inputsearch" name="searchName" style="width: 60px"
+					    />
+					    作家<input type="text" class="inputsearch" name="searchAuthor" style="width: 60px"/>
+					    値段<input type="text" class="inputsearch" name="lowPrice" style="width: 60px"
+					    />
+					    	<input type="text" class="inputsearch" name="topPrice" style="width: 60px"/>
+					    <input type="submit" class="button" value="検索" />
+					    <div><span></span></div>
+			 
+					  </form>
+				</div>
+	            <table class="table">
+	                <tr class="table_header">
+	                    <td>
+	                        ID
+	                    </td>
+	                    <td>
+	                        本の名前
+	                    </td>
+	                    <td>
+	                        作家
+	                    </td>
+	                    <td>
+	                        値段
+	                    </td>
+	                    <td>
+	                        写真
+	                    </td>
+	                    <td>
+	                        操作
+	                    </td>
+	                </tr>
+	                <tr th:each="books,state:${BooksList}" th:class="${state.odd?'row1':'row2'}">
+	                    <td>
+	                       <span th:text="${books.id}"/>
+	                    </td>
+	                    <td>
+	                       <span th:text="${books.name}"/> 
+	                    </td>
+	                    <td>
+	                     	<span th:text="${books.author}"/>
+	                    </td>
+	                    <td>
+	                        <span th:text="${books.price}"/>
+	                    </td>
+	                    <td>
+	                        <img th:src="@{/}+${books.photo}" style="height: 40px;">
+	                    </td>
+	                    <td>
+	                        <a href="javascript:;" th:onclick="'delEmp('+${books.id}+')'">削除</a>&nbsp;
+	                        <a th:href="@{/books/detail(id=${books.id})}">更新</a>
+	                    </td>
+	                </tr>
+	            </table>
+	            <p>
+	                <input type="button" class="button" value="本を追加する" onclick="addEmp()"/>
+	            </p>
+	            <script>
+					function addEmp(){
+						location.href='[[@{/addEmp}]]'
+					}
+					function delEmp(id){
+						console.log(id)
+						if(window.confirm("この本の情報を削除してがいいですが")){
+							location.href="[[@{/books/delete?id=}]]"+id
+						}
+					}
+				</script>
+	        </div>
+	    </div>
+	    <div id="footer">
+	        <div id="footer_bg">
+	            Lirary@126.com
+	        </div>
+	    </div>
+	</div>
+</div>
+</body>
+</html>
+<script>
+  
+        const nowtime = document.querySelector('#nowtime')
+		
+		
+        setInterval(()=>{
+           
+            nowtime.innerHTML=gettime();
+        },1000)
+        function gettime() { 		   
+        const date= new Date()    
+        var year=date.getFullYear()
+        var month=date.getMonth()+1
+        var day=date.getDate()
+        var week=date.getDay()
+        var hour=date.getHours()
+        var min=date.getMinutes()
+        var s=date.getSeconds()
+        let arr=['日','一','二','三','四','五','六',]
+     
+        month=month<10?'0'+month:month
+        day=day<10?'0'+day:day
+        hour=hour<10?'0'+hour:hour
+        min =min <10?'0'+min :min
+        s  =s  <10?'0'+s  :s   
+        var nowtime=year+'年'+month+'月'+day+'日'+'&nbsp&nbsp&nbsp'+'曜日'+arr[week]+'&nbsp&nbsp&nbsp'+hour+'时'+min+'分'+s+'秒'
+        return nowtime
+        }
+        
+ </script>
+"
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:366)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+2024-05-27 13:52:42 - o.a.c.c.C.[.[.[.[dispatcherServlet] - ERROR - Servlet.service() for servlet [dispatcherServlet] in context with path [/bookthymeleaf] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/emplist.html]" - line 20, col 22)] with root cause
+org.attoparser.ParseException: (Line = 20, Column = 22) Incomplete structure: "<p th:href="@{/user/logout}>
+	                    安全退出
+	                	</p>
+	            </div>
+	            <div id="topheader">
+	                <h1 id="title">
+	                    <a href="/emplist.html">図書館</a>
+	                </h1>
+	            	
+	            </div>
+	            <div id="navigation">
+	            </div>
+	        </div>
+	        <div id="content">
+	            <p id="whereami">
+	            </p>
+	            <h1>
+	                ようこそ<span th:if="${session.user!=null}" th:text="${session.user.realname}"></span>
+	            	<span th:if="${session.user==null}">ゲスト</span>
+	            </h1>
+	            <div style="margin-bottom:10px; text-align: right;">
+	                 <form th:action="@{/books/search}" method="post" >
+					    
+					    本の名前<input type="text" class="inputsearch" name="searchName" style="width: 60px"
+					    />
+					    作家<input type="text" class="inputsearch" name="searchAuthor" style="width: 60px"/>
+					    値段<input type="text" class="inputsearch" name="lowPrice" style="width: 60px"
+					    />
+					    	<input type="text" class="inputsearch" name="topPrice" style="width: 60px"/>
+					    <input type="submit" class="button" value="検索" />
+					    <div><span></span></div>
+			 
+					  </form>
+				</div>
+	            <table class="table">
+	                <tr class="table_header">
+	                    <td>
+	                        ID
+	                    </td>
+	                    <td>
+	                        本の名前
+	                    </td>
+	                    <td>
+	                        作家
+	                    </td>
+	                    <td>
+	                        値段
+	                    </td>
+	                    <td>
+	                        写真
+	                    </td>
+	                    <td>
+	                        操作
+	                    </td>
+	                </tr>
+	                <tr th:each="books,state:${BooksList}" th:class="${state.odd?'row1':'row2'}">
+	                    <td>
+	                       <span th:text="${books.id}"/>
+	                    </td>
+	                    <td>
+	                       <span th:text="${books.name}"/> 
+	                    </td>
+	                    <td>
+	                     	<span th:text="${books.author}"/>
+	                    </td>
+	                    <td>
+	                        <span th:text="${books.price}"/>
+	                    </td>
+	                    <td>
+	                        <img th:src="@{/}+${books.photo}" style="height: 40px;">
+	                    </td>
+	                    <td>
+	                        <a href="javascript:;" th:onclick="'delEmp('+${books.id}+')'">削除</a>&nbsp;
+	                        <a th:href="@{/books/detail(id=${books.id})}">更新</a>
+	                    </td>
+	                </tr>
+	            </table>
+	            <p>
+	                <input type="button" class="button" value="本を追加する" onclick="addEmp()"/>
+	            </p>
+	            <script>
+					function addEmp(){
+						location.href='[[@{/addEmp}]]'
+					}
+					function delEmp(id){
+						console.log(id)
+						if(window.confirm("この本の情報を削除してがいいですが")){
+							location.href="[[@{/books/delete?id=}]]"+id
+						}
+					}
+				</script>
+	        </div>
+	    </div>
+	    <div id="footer">
+	        <div id="footer_bg">
+	            Lirary@126.com
+	        </div>
+	    </div>
+	</div>
+</div>
+</body>
+</html>
+<script>
+  
+        const nowtime = document.querySelector('#nowtime')
+		
+		
+        setInterval(()=>{
+           
+            nowtime.innerHTML=gettime();
+        },1000)
+        function gettime() { 		   
+        const date= new Date()    
+        var year=date.getFullYear()
+        var month=date.getMonth()+1
+        var day=date.getDate()
+        var week=date.getDay()
+        var hour=date.getHours()
+        var min=date.getMinutes()
+        var s=date.getSeconds()
+        let arr=['日','一','二','三','四','五','六',]
+     
+        month=month<10?'0'+month:month
+        day=day<10?'0'+day:day
+        hour=hour<10?'0'+hour:hour
+        min =min <10?'0'+min :min
+        s  =s  <10?'0'+s  :s   
+        var nowtime=year+'年'+month+'月'+day+'日'+'&nbsp&nbsp&nbsp'+'曜日'+arr[week]+'&nbsp&nbsp&nbsp'+hour+'时'+min+'分'+s+'秒'
+        return nowtime
+        }
+        
+ </script>
+"
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:366)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2024-05-27 13:53:01 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-27 13:53:24 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-27 13:53:57 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-27 13:54:14 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-27 13:54:18 - c.b.controller.copy.BooksController - INFO - 更新ID:7
+2024-05-27 13:56:41 - c.b.controller.copy.UserController - INFO - ユーザー名:sakura,パスワード:123
+2024-05-27 13:56:41 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-27 13:58:20 - c.b.controller.copy.BooksController - INFO - 更新ID:8
+2024-05-27 14:25:07 - c.b.controller.copy.BooksController - INFO - 更新ID:8
+2024-05-27 14:47:13 - c.b.controller.copy.UserController - INFO - ユーザー名:tom,パスワード:123
+2024-05-27 14:47:13 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-27 15:13:52 - c.b.controller.copy.UserController - INFO - ユーザー名:sakura,パスワード:123
+2024-05-27 15:13:52 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-27 15:14:14 - o.s.w.s.m.s.DefaultHandlerExceptionResolver - WARN - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public java.lang.String com.book.controller.copy.BooksController.save(com.book.entity.Books,org.springframework.web.multipart.MultipartFile) throws java.lang.IllegalStateException,java.io.IOException: [Field error in object 'books' on field 'price': rejected value []; codes [typeMismatch.books.price,typeMismatch.price,typeMismatch.double,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [books.price,price]; arguments []; default message [price]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'double' for property 'price'; empty String]] ]
+2024-05-27 15:14:30 - c.b.controller.copy.BooksController - INFO - 更新ID:7
+2024-05-27 15:15:23 - c.b.controller.copy.BooksController - INFO - 更新ID:7
+2024-05-27 16:49:18 - c.b.controller.copy.UserController - INFO - ユーザー名:sakura,パスワード:123
+2024-05-27 16:49:18 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-27 16:49:38 - c.b.controller.copy.BooksController - INFO - 更新ID:7
+2024-05-27 16:50:24 - c.b.controller.copy.BooksController - INFO - 更新ID:7
+2024-05-27 16:50:32 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-27 16:51:08 - c.b.controller.copy.BooksController - INFO - 更新した本：7,本の名前:啊啊啊,作家:tomson,値段:123.0
+2024-05-27 16:51:08 - c.b.controller.copy.BooksController - INFO - 写真更新するかどうが:false
+2024-05-27 16:51:08 - com.book.aop.LogAspect - INFO - AOP操作のレコード:1,2024-05-27T16:51:08.595316900,com.book.controller.copy.BooksController,update,[Books(id=7, name=啊啊啊, author=tomson, price=123.0, photo=eu_mic-short_chi_mickey_r_fd57c75520240523150028174.jpeg), org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@1cb1680b],redirect:/books/lists,8
+2024-05-27 16:51:08 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-27 17:12:05 - c.b.controller.copy.BooksController - INFO - 更新ID:7
+2024-05-27 17:14:15 - c.b.controller.copy.UserController - INFO - ユーザー名:tom,パスワード:123
+2024-05-27 17:14:15 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-27 17:14:36 - c.b.controller.copy.BooksController - INFO - 更新ID:8
+2024-05-27 17:16:09 - c.b.controller.copy.UserController - INFO - ユーザー名:sakura,パスワード:123
+2024-05-27 17:16:09 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-27 23:12:15 - com.zaxxer.hikari.pool.HikariPool - WARN - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5h36m26s583ms808µs800ns).

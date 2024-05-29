@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title>regist</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" th:href="@{css/style.css}" />
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<div id="all">
+			<div id="wrap">
+				<div id="top_content">
+						<div id="header">
+							<div id="rightheader">								
+								<p id="nowtime">
+									2009/11/20
+								</p>								
+							</div>
+							<div id="topheader">
+								<h1 id="title">
+									<a href="#">図書館</a>
+								</h1>
+							</div>
+							<div id="navigation">
+							</div>
+						</div>
+					<div id="content">
+						<p id="whereami">
+						</p>
+						<h1>
+							管理者新規
+						</h1>
+						<h3><span th:text="${param.msg}"></span></h3>
+						<form th:action="@{/user/register}" method="post">
+							<table cellpadding="5" cellspacing="0" border="0"
+								class="form_table">
+								<tr>
+									<td valign="middle" align="right">
+										ユーザー名:
+									</td>
+									<td valign="middle" align="left">
+										<input type="text" class="inputgri" name="username"  />
+									</td>
+								</tr>
+								<tr>
+									<td valign="middle" align="right">
+										名前:
+									</td>
+									<td valign="middle" align="left">
+										<input type="text" class="inputgri" name="realname"  />
+									</td>
+								</tr>
+								<tr>
+									<td valign="middle" align="right">
+										パスワード:
+									</td>
+									<td valign="middle" align="left">
+										<input type="password" class="inputgri" name="password" />
+
+									</td>
+								</tr>
+								<tr>
+									<td valign="middle" align="right">
+										性别:
+									</td>
+									<td valign="middle" align="left">
+										男
+										<input type="radio" class="inputgri"  name="gender" value="1" checked="checked"/>
+										女
+										<input type="radio" class="inputgri" name="gender"  value="0"/>
+									</td>
+								</tr>
+								
+								<tr>
+									<td valign="middle" align="right">
+										検証コード:
+										<img id="num" th:src="@{/user/generateImageCode}" />
+									</td>
+									<td valign="middle" align="left">
+										<input type="text" name="code" class="inputgri" />
+									</td>
+									<td>
+										
+										<a href="javascript:;" onclick="changeImageCode()">コード交換する</a>
+									
+									</td>
+								</tr>
+							</table>
+							<p>
+							<input type="submit" class="button" value="提出する &raquo;" />
+	                 		 <button class="button" type="button" onclick="location.href='@{/login}'">登録</button>
+<!--						 <input type="button" class="button" value="登録" onclick="login()"/>-->
+
+							</p>
+							
+						</form>
+					</div>
+				</div>
+				<div id="footer">
+					<div id="footer_bg">
+					Lirary@126.com
+					</div>
+			</div>
+		</div>
+		</div>
+	</body>
+</html>
+<script>
+<!--	function login(){
+						location.href='[[@{/login}]]'		
+				}-->
+  
+        const nowtime = document.querySelector('#nowtime')
+		gettime()
+        setInterval(()=>{
+            //nowtime.innerHTML=gettime();
+            nowtime.innerHTML=gettime();
+        },1000)
+
+		function changeImageCode(){
+		document.getElementById('num').src='[[@{/user/generateImageCode}]]?'+(new Date()).getTime()
+	}
+	
+</script>

@@ -1,0 +1,30 @@
+server:
+  port: 20254
+  servlet:
+    context-path: /bookthymeleaf
+
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false
+  datasource:  
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url:  jdbc:mysql://localhost:3306/book?characterEncoding=UTF-8
+    username: root
+    password: 1234
+  web:
+    resources:
+      static-locations: classpath:/static/,file:${file.upload}
+      
+     
+    
+mybatis:
+  mapper-locations:  classpath:com/book/mapper/*.xml
+  type-aliases-package:  com.book.entity
+
+file:
+  upload: C:\\pleiades\\2023-12\\workspace\\book\\upload
+
+

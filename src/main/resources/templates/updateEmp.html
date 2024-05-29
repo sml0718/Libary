@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title>update Emp</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css"
+			th:href="@{/css/style.css}" />
+		<script src="js/script.js"></script>
+	</head>
+
+	<body>
+		<div id="all">
+			<div id="wrap">
+				<div id="top_content">
+					<div id="header">
+						<div id="rightheader">
+							<p id="nowtime">
+								2009/11/20
+							</p>
+								<br/>
+	                    <div style="margin-right:10% ;">
+								<a th:href="@{/user/logout}">安全退出</a>
+							</div>
+						</div>
+						<div id="topheader">
+							<h1 id="title">
+								<a href="/emplist.html">図書館</a>
+							</h1>
+						</div>
+						<div id="navigation">
+						</div>
+					</div>
+					<div id="content">
+						<p id="whereami">
+						</p>
+						<h1>
+							本の情報更新:
+						</h1>
+						<form th:action="@{/books/update}" method="post" enctype="multipart/form-data">
+							<table cellpadding="5" cellspacing="0" border="0"
+								class="form_table">
+								<tr>
+									<td valign="middle" align="right">
+										本番号:
+									</td>
+									<td valign="middle" align="left">
+										<span th:text="${books.id}"></span>
+										<input type="hidden" name="id" th:value="${books.id}"/>
+									</td>
+								</tr>
+															<tr>
+									<td valign="middle" align="right">
+										本の名前:
+									</td>
+									<td valign="middle" align="left">
+										<input type="text" class="inputgri" name="name" th:value="${books.name}"/>
+									</td>
+								</tr>
+								<tr>
+									<td valign="middle" align="right">
+										古い写真:
+									</td>
+									<td valign="middle" align="left">
+										<img th:src="@{/}+${books.photo}" style="height: 60px;" >
+										<input type="hidden" name="photo" th:value="${books.photo}"/>
+	
+									</td>
+								</tr>
+								<tr>
+									<td valign="middle" align="right">
+										写真更新:
+										
+									</td>
+	
+									<td valign="middle" align="left">
+										<input type="file" name="img" />
+									</td>
+								</tr>
+								<tr>
+									<td valign="middle" align="right">
+										値段:
+									</td>
+									<td valign="middle" align="left">
+										<input type="text" class="inputgri" name="price" th:value="${books.price}"/>
+									</td>
+								</tr>
+								<tr>
+									<td valign="middle" align="right">
+										作家:
+									</td>
+									<td valign="middle" align="left">
+										<input type="text" class="inputgri" name="author" th:value="${books.author}"/>
+									</td>
+								</tr>
+							</table>
+							<p>
+								<input type="submit" class="button" value="提出する" />
+							</p>
+						</form>
+					</div>
+				</div>
+				<div id="footer">
+					<div id="footer_bg">
+						Lirary@126.com
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script>
+  
+        const nowtime = document.querySelector('#nowtime')
+		
+        setInterval(()=>{
+            
+            nowtime.innerHTML=gettime();
+        },1000)
+        function gettime() { 		   
+        const date= new Date()    
+        var year=date.getFullYear()
+        var month=date.getMonth()+1
+        var day=date.getDate()
+        var week=date.getDay()
+        var hour=date.getHours()
+        var min=date.getMinutes()
+        var s=date.getSeconds()
+        let arr=['日','一','二','三','四','五','六',]
+     
+        month=month<10?'0'+month:month
+        day=day<10?'0'+day:day
+        hour=hour<10?'0'+hour:hour
+        min =min <10?'0'+min :min
+        s  =s  <10?'0'+s  :s   
+        var nowtime=year+'年'+month+'月'+day+'日'+'&nbsp&nbsp&nbsp'+'曜日'+arr[week]+'&nbsp&nbsp&nbsp'+hour+'时'+min+'分'+s+'秒'
+        return nowtime
+        }
+ </script>

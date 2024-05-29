@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>login</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css"
+          th:href="@{css/style.css}"/>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+<div id="all">	
+	<div id="wrap">
+	    <div id="top_content">
+	        <div id="header">
+	            <div id="rightheader">
+	                <p id="nowtime">
+	                    2009/11/20
+	                    <br/>
+	                </p>
+	            </div>
+	            <div id="topheader">
+	                <h1 id="title">
+	                    <a href="#">図書館</a>
+	                </h1>
+	            </div>
+	            <div id="navigation">
+	            </div>
+	        </div>
+	        <div id="content">
+	            <p id="whereami">
+	            </p>
+	            <h1>
+	                登録
+	            </h1>
+	            <h3><span th:text="${param.msg}"></span></h3>
+	            <form th:action="@{/user/login}" method="post">
+	                <table cellpadding="5" cellspacing="0" border="0"
+	                       class="form_table">
+	                    <tr>
+	                        <td valign="middle" align="right">
+	                            ユーザー名:
+	                        </td>
+	                        <td valign="middle" align="left">
+	                            <input type="text" class="inputgri" name="username"/>
+	                        </td>
+	                    </tr>
+	                    <tr>
+	                        <td valign="middle" align="right">
+	                            パスワード:
+	                        </td>
+	                        <td valign="middle" align="left">
+	                            <input type="password" class="inputgri" name="password"/>
+	                        </td>
+	                    </tr>
+	                </table>
+	                <p>
+	                    <input type="submit" class="button" value="提出する &raquo;"/>
+	                    &nbsp;&nbsp;
+	                    <a th:href="@{/register}">ユーザー名がない場合は、こちらへ</a>
+	                </p>
+	            </form>
+	        </div>
+	    </div>
+	    <div id="footer">
+	        <div id="footer_bg">
+	            Lirary@126.com
+	        </div>
+	    </div>
+	</div>
+</div>
+</body>
+</html>
+<script>
+  
+        const nowtime = document.querySelector('#nowtime')
+		
+        setInterval(()=>{
+            //nowtime.innerHTML=gettime();
+            nowtime.innerHTML=gettime();
+        },1000)
+ </script>

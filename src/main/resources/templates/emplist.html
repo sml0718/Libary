@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>emplist</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+    <script src="js/script.js"></script>
+</head>
+ 
+<body>
+<div id="all">
+	<div id="wrap">
+	    <div id="top_content">
+	        <div id="header">
+	            <div id="rightheader">
+	                
+	                    <p id="nowtime">
+							2009/11/20
+						</p>
+						<br/>
+	                    <div style="margin-right:10% ;">
+	                    <a th:href="@{/user/logout}">安全退出</a>
+	                	</div>
+	            </div>
+	            <div id="topheader">
+	                <h1 id="title">
+	                    <a href="/emplist.html">図書館</a>
+	                </h1>
+	            	
+	            </div>
+	            <div id="navigation">
+	            </div>
+	        </div>
+	        <div id="content">
+	            <p id="whereami">
+	            </p>
+	            <h1>
+	                ようこそ<span th:if="${session.user!=null}" th:text="${session.user.realname}"></span>
+	            	<span th:if="${session.user==null}">ゲスト</span>
+	            </h1>
+	            <div style="margin-bottom:10px; text-align: right;">
+	                 <form th:action="@{/books/search}" method="post" >
+					    
+					    本の名前<input type="text" class="inputsearch" name="searchName" style="width: 60px"
+					    />
+					    作家<input type="text" class="inputsearch" name="searchAuthor" style="width: 60px"/>
+					    値段<input type="text" class="inputsearch" name="lowPrice" style="width: 60px"
+					    />
+					    	<input type="text" class="inputsearch" name="topPrice" style="width: 60px"/>
+					    <input type="submit" class="button" value="検索" />
+					    <div><span></span></div>
+			 
+					  </form>
+				</div>
+	            <table class="table">
+	                <tr class="table_header">
+	                    <td>
+	                        ID
+	                    </td>
+	                    <td>
+	                        本の名前
+	                    </td>
+	                    <td>
+	                        作家
+	                    </td>
+	                    <td>
+	                        値段
+	                    </td>
+	                    <td>
+	                        写真
+	                    </td>
+	                    <td>
+	                        操作
+	                    </td>
+	                </tr>
+	                <tr th:each="books,state:${BooksList}" th:class="${state.odd?'row1':'row2'}">
+	                    <td>
+	                       <span th:text="${books.id}"/>
+	                    </td>
+	                    <td>
+	                       <span th:text="${books.name}"/> 
+	                    </td>
+	                    <td>
+	                     	<span th:text="${books.author}"/>
+	                    </td>
+	                    <td>
+	                        <span th:text="${books.price}"/>
+	                    </td>
+	                    <td>
+	                        <img th:src="@{/}+${books.photo}" style="height: 40px;">
+	                    </td>
+	                    <td>
+	                        <a href="javascript:;" th:onclick="'delEmp('+${books.id}+')'">削除</a>&nbsp;
+	                        <a th:href="@{/books/detail(id=${books.id})}">更新</a>
+	                    </td>
+	                </tr>
+	            </table>
+	            <p>
+	                <input type="button" class="button" value="本を追加する" onclick="addEmp()"/>
+	            </p>
+	            <script>
+					function addEmp(){
+						location.href='[[@{/addEmp}]]'
+					}
+					function delEmp(id){
+						console.log(id)
+						if(window.confirm("この本の情報を削除してがいいですが")){
+							location.href="[[@{/books/delete?id=}]]"+id
+						}
+					}
+				</script>
+	        </div>
+	    </div>
+	    <div id="footer">
+	        <div id="footer_bg">
+	            Lirary@126.com
+	        </div>
+	    </div>
+	</div>
+</div>
+</body>
+</html>
+<script>
+  
+        const nowtime = document.querySelector('#nowtime')
+		
+		
+        setInterval(()=>{
+           
+            nowtime.innerHTML=gettime();
+        },1000)
+        function gettime() { 		   
+        const date= new Date()    
+        var year=date.getFullYear()
+        var month=date.getMonth()+1
+        var day=date.getDate()
+        var week=date.getDay()
+        var hour=date.getHours()
+        var min=date.getMinutes()
+        var s=date.getSeconds()
+        let arr=['日','一','二','三','四','五','六',]
+     
+        month=month<10?'0'+month:month
+        day=day<10?'0'+day:day
+        hour=hour<10?'0'+hour:hour
+        min =min <10?'0'+min :min
+        s  =s  <10?'0'+s  :s   
+        var nowtime=year+'年'+month+'月'+day+'日'+'&nbsp&nbsp&nbsp'+'曜日'+arr[week]+'&nbsp&nbsp&nbsp'+hour+'时'+min+'分'+s+'秒'
+        return nowtime
+        }
+        
+ </script>

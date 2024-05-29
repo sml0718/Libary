@@ -1,0 +1,226 @@
+2024-05-30 03:29:48 - com.zaxxer.hikari.pool.HikariPool - WARN - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4h13m44s17ms963µs300ns).
+2024-05-30 03:42:14 - org.thymeleaf.TemplateEngine - ERROR - [THYMELEAF][http-nio-20254-exec-1] Exception processing template "regist": An error happened during template parsing (template: "class path resource [templates/regist.html]" - line 91, col 22)
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/regist.html]" - line 91, col 22)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:239)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.attoparser.ParseException: (Line = 91, Column = 22) Incomplete structure: "<button class="button" type="button" onclick=location.href='[[@{/login}]]'">ログイン</button>
+						 <input type="button" class="button" value="登録" onclick="login()"/>
+
+							</p>
+							
+						</form>
+					</div>
+				</div>
+				<div id="footer">
+					<div id="footer_bg">
+					Lirary@126.com
+					</div>
+			</div>
+		</div>
+		</div>
+	</body>
+</html>
+<script>
+	function login(){
+						location.href='[[@{/login}]]'
+					}
+  
+        const nowtime = document.querySelector('#nowtime')
+		gettime()
+        setInterval(()=>{
+            //nowtime.innerHTML=gettime();
+            nowtime.innerHTML=gettime();
+        },1000)
+
+		function changeImageCode(){
+		document.getElementById('num').src='[[@{/user/generateImageCode}]]?'+(new Date()).getTime()
+	}
+	
+</script>"
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:366)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+2024-05-30 03:42:14 - o.a.c.c.C.[.[.[.[dispatcherServlet] - ERROR - Servlet.service() for servlet [dispatcherServlet] in context with path [/bookthymeleaf] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/regist.html]" - line 91, col 22)] with root cause
+org.attoparser.ParseException: (Line = 91, Column = 22) Incomplete structure: "<button class="button" type="button" onclick=location.href='[[@{/login}]]'">ログイン</button>
+						 <input type="button" class="button" value="登録" onclick="login()"/>
+
+							</p>
+							
+						</form>
+					</div>
+				</div>
+				<div id="footer">
+					<div id="footer_bg">
+					Lirary@126.com
+					</div>
+			</div>
+		</div>
+		</div>
+	</body>
+</html>
+<script>
+	function login(){
+						location.href='[[@{/login}]]'
+					}
+  
+        const nowtime = document.querySelector('#nowtime')
+		gettime()
+        setInterval(()=>{
+            //nowtime.innerHTML=gettime();
+            nowtime.innerHTML=gettime();
+        },1000)
+
+		function changeImageCode(){
+		document.getElementById('num').src='[[@{/user/generateImageCode}]]?'+(new Date()).getTime()
+	}
+	
+</script>"
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:366)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2024-05-30 03:49:51 - c.b.controller.copy.UserController - INFO - ユーザー名:sakura,パスワード:123
+2024-05-30 03:49:51 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-30 03:49:56 - c.b.controller.copy.BooksController - INFO - 更新ID:12
+2024-05-30 03:50:09 - c.b.controller.copy.UserController - INFO - ユーザー名:sakura,パスワード:123
+2024-05-30 03:50:09 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-30 03:54:33 - c.b.controller.copy.UserController - INFO - ユーザー名:sakura,パスワード:123
+2024-05-30 03:54:33 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-30 03:54:41 - c.b.controller.copy.BooksController - INFO - 削除の社員ID:12
+2024-05-30 03:54:41 - com.book.aop.LogAspect - INFO - AOP操作のレコード:1,2024-05-30T03:54:41.386954800,com.book.controller.copy.BooksController,delete,[12],redirect:/books/lists,22
+2024-05-30 03:54:41 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-30 04:10:44 - c.b.controller.copy.BooksController - INFO - ファイルの名:71anhJ3E5BL._SL1500_.jpg,ファイルのサイズ：128966,アップロードあど:C:\\pleiades\\2023-12\\workspace\\book\\upload
+2024-05-30 04:10:44 - c.b.controller.copy.BooksController - INFO - 新しいファイルの名:71anhJ3E5BL._SL1500_20240530041044756.jpg
+2024-05-30 04:10:44 - c.b.controller.copy.BooksController - INFO - 新しいファイルの名:71anhJ3E5BL._SL1500_20240530041044756.jpg
+2024-05-30 04:10:44 - com.book.aop.LogAspect - INFO - AOP操作のレコード:1,2024-05-30T04:10:44.756368900,com.book.controller.copy.BooksController,save,[Books(id=null, name=すごい英語独学 独り言トレーニング: 留学なしでも劇的に話せる。 Kindle版, author=Sakura Englis, price=500.0, photo=null), org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@6f4be37f],redirect:/books/lists,17
+2024-05-30 04:10:44 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-30 04:15:13 - c.b.controller.copy.BooksController - INFO - ファイルの名:81lvWz9rnmL._SL1500_.jpg,ファイルのサイズ：160797,アップロードあど:C:\\pleiades\\2023-12\\workspace\\book\\upload
+2024-05-30 04:15:13 - c.b.controller.copy.BooksController - INFO - 新しいファイルの名:81lvWz9rnmL._SL1500_20240530041513658.jpg
+2024-05-30 04:15:13 - c.b.controller.copy.BooksController - INFO - 新しいファイルの名:81lvWz9rnmL._SL1500_20240530041513658.jpg
+2024-05-30 04:15:13 - com.book.aop.LogAspect - INFO - AOP操作のレコード:1,2024-05-30T04:15:13.658916900,com.book.controller.copy.BooksController,save,[Books(id=null, name=人生の成功とは何か 最期の一瞬に問われるもの (PHP文庫) 文庫 – 2024/3/4, author=田坂 広志, price=880.0, photo=null), org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@4f332dfd],redirect:/books/lists,13
+2024-05-30 04:15:13 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-30 04:18:43 - c.b.controller.copy.BooksController - INFO - ファイルの名:81-7+YU2bEL._SY466_.jpg,ファイルのサイズ：44892,アップロードあど:C:\\pleiades\\2023-12\\workspace\\book\\upload
+2024-05-30 04:18:43 - c.b.controller.copy.BooksController - INFO - 新しいファイルの名:81-7+YU2bEL._SY466_20240530041843031.jpg
+2024-05-30 04:18:43 - c.b.controller.copy.BooksController - INFO - 新しいファイルの名:81-7+YU2bEL._SY466_20240530041843031.jpg
+2024-05-30 04:18:43 - com.book.aop.LogAspect - INFO - AOP操作のレコード:1,2024-05-30T04:18:43.031454,com.book.controller.copy.BooksController,save,[Books(id=null, name=頭がよくなる!知育シールパズル たんけん!ふしぎなせかい編 ペーパーバック – 2022/9/1, author= 茂木 健一郎 , price=1650.0, photo=null), org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@52da770a],redirect:/books/lists,10
+2024-05-30 04:18:43 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-30 04:22:07 - c.b.controller.copy.BooksController - INFO - ファイルの名:81VCKqTHT9L._SL1500_.jpg,ファイルのサイズ：150646,アップロードあど:C:\\pleiades\\2023-12\\workspace\\book\\upload
+2024-05-30 04:22:07 - c.b.controller.copy.BooksController - INFO - 新しいファイルの名:81VCKqTHT9L._SL1500_20240530042207714.jpg
+2024-05-30 04:22:07 - c.b.controller.copy.BooksController - INFO - 新しいファイルの名:81VCKqTHT9L._SL1500_20240530042207714.jpg
+2024-05-30 04:22:07 - com.book.aop.LogAspect - INFO - AOP操作のレコード:1,2024-05-30T04:22:07.714515600,com.book.controller.copy.BooksController,save,[Books(id=null, name=親子で哲学対話～10分からはじめる「本質を考える」レッスン 単行本（ソフトカバー） – 2024/5/18, author=苫野一徳 , price=1650.0, photo=null), org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@7f1abd1],redirect:/books/lists,18
+2024-05-30 04:22:07 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-30 04:22:29 - c.b.controller.copy.BooksController - INFO - 更新ID:13
+2024-05-30 04:22:47 - c.b.controller.copy.BooksController - INFO - 更新した本：13,本の名前:すごい英語独学 独り言トレーニング: 留学なしでも劇的に話せる。 Kindle版,作家:Sakura English,値段:500.0
+2024-05-30 04:22:47 - c.b.controller.copy.BooksController - INFO - 写真更新するかどうが:false
+2024-05-30 04:22:47 - com.book.aop.LogAspect - INFO - AOP操作のレコード:1,2024-05-30T04:22:47.684051200,com.book.controller.copy.BooksController,update,[Books(id=13, name=すごい英語独学 独り言トレーニング: 留学なしでも劇的に話せる。 Kindle版, author=Sakura English, price=500.0, photo=71anhJ3E5BL._SL1500_20240530041044756.jpg), org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@12ef7108],redirect:/books/lists,15
+2024-05-30 04:22:47 - c.b.controller.copy.BooksController - INFO - 全部社員を照会する
+2024-05-30 04:23:15 - c.b.controller.copy.UserController - INFO - ユーザー名:,パスワード:
+2024-05-30 04:26:48 - com.book.BookApplication - INFO - Starting BookApplication using Java 17.0.10 with PID 49392 (C:\pleiades\2023-12\workspace\book\target\classes started by 59220 in C:\pleiades\2023-12\workspace\book)
+2024-05-30 04:26:48 - com.book.BookApplication - INFO - No active profile set, falling back to 1 default profile: "default"
+2024-05-30 04:26:48 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - INFO - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-30 04:26:48 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - INFO - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-30 04:26:50 - o.s.b.w.e.tomcat.TomcatWebServer - INFO - Tomcat initialized with port 20254 (http)
+2024-05-30 04:26:50 - o.a.coyote.http11.Http11NioProtocol - INFO - Initializing ProtocolHandler ["http-nio-20254"]
+2024-05-30 04:26:50 - o.a.catalina.core.StandardService - INFO - Starting service [Tomcat]
+2024-05-30 04:26:50 - o.a.catalina.core.StandardEngine - INFO - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-30 04:26:50 - o.a.c.c.C.[.[.[/bookthymeleaf] - INFO - Initializing Spring embedded WebApplicationContext
+2024-05-30 04:26:50 - o.s.b.w.s.c.ServletWebServerApplicationContext - INFO - Root WebApplicationContext: initialization completed in 1306 ms
+2024-05-30 04:26:50 - o.s.b.d.a.OptionalLiveReloadServer - INFO - LiveReload server is running on port 35729
+2024-05-30 04:26:50 - o.a.coyote.http11.Http11NioProtocol - INFO - Starting ProtocolHandler ["http-nio-20254"]
+2024-05-30 04:26:51 - o.s.b.w.e.tomcat.TomcatWebServer - INFO - Tomcat started on port 20254 (http) with context path '/bookthymeleaf'
+2024-05-30 04:26:51 - com.book.BookApplication - INFO - Started BookApplication in 2.536 seconds (process running for 3.231)
