@@ -224,3 +224,30 @@ org.attoparser.ParseException: (Line = 91, Column = 22) Incomplete structure: "<
 2024-05-30 04:26:50 - o.a.coyote.http11.Http11NioProtocol - INFO - Starting ProtocolHandler ["http-nio-20254"]
 2024-05-30 04:26:51 - o.s.b.w.e.tomcat.TomcatWebServer - INFO - Tomcat started on port 20254 (http) with context path '/bookthymeleaf'
 2024-05-30 04:26:51 - com.book.BookApplication - INFO - Started BookApplication in 2.536 seconds (process running for 3.231)
+2024-05-30 05:53:59 - o.a.c.c.C.[.[.[/bookthymeleaf] - INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-30 05:53:59 - o.s.web.servlet.DispatcherServlet - INFO - Initializing Servlet 'dispatcherServlet'
+2024-05-30 05:53:59 - o.s.web.servlet.DispatcherServlet - INFO - Completed initialization in 16 ms
+2024-05-30 17:03:20 - c.b.controller.copy.UserController - INFO - ユーザー名:,パスワード:
+2024-05-30 17:03:20 - com.zaxxer.hikari.HikariDataSource - INFO - HikariPool-1 - Starting...
+2024-05-30 17:03:21 - com.zaxxer.hikari.pool.HikariPool - INFO - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4a4c96e6
+2024-05-30 17:03:21 - com.zaxxer.hikari.HikariDataSource - INFO - HikariPool-1 - Start completed.
+2024-05-30 17:03:29 - c.b.controller.copy.UserController - INFO - ユーザー名:sakura,パスワード:555
+2024-05-30 17:05:06 - c.b.controller.copy.UserController - INFO - ユーザー名:,パスワード:
+2024-05-30 17:05:29 - c.b.controller.copy.UserController - INFO - ユーザー名:sss,パスワード:123
+2024-05-30 17:28:02 - o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - INFO - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-05-30 17:28:02 - o.a.coyote.http11.Http11NioProtocol - INFO - Stopping ProtocolHandler ["http-nio-20254"]
+2024-05-30 17:28:02 - com.zaxxer.hikari.HikariDataSource - INFO - HikariPool-1 - Shutdown initiated...
+2024-05-30 17:28:02 - com.zaxxer.hikari.HikariDataSource - INFO - HikariPool-1 - Shutdown completed.
+2024-05-30 17:28:02 - com.book.BookApplication - INFO - Starting BookApplication using Java 17.0.10 with PID 49392 (C:\pleiades\2023-12\workspace\book\target\classes started by 59220 in C:\pleiades\2023-12\workspace\book)
+2024-05-30 17:28:02 - com.book.BookApplication - INFO - No active profile set, falling back to 1 default profile: "default"
+2024-05-30 17:28:02 - o.s.b.w.e.tomcat.TomcatWebServer - INFO - Tomcat initialized with port 20254 (http)
+2024-05-30 17:28:02 - o.a.coyote.http11.Http11NioProtocol - INFO - Initializing ProtocolHandler ["http-nio-20254"]
+2024-05-30 17:28:02 - o.a.catalina.core.StandardService - INFO - Starting service [Tomcat]
+2024-05-30 17:28:02 - o.a.catalina.core.StandardEngine - INFO - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-30 17:28:02 - o.a.c.c.C.[.[.[/bookthymeleaf] - INFO - Initializing Spring embedded WebApplicationContext
+2024-05-30 17:28:02 - o.s.b.w.s.c.ServletWebServerApplicationContext - INFO - Root WebApplicationContext: initialization completed in 238 ms
+2024-05-30 17:28:03 - o.s.b.d.a.OptionalLiveReloadServer - INFO - LiveReload server is running on port 35729
+2024-05-30 17:28:03 - o.a.coyote.http11.Http11NioProtocol - INFO - Starting ProtocolHandler ["http-nio-20254"]
+2024-05-30 17:28:03 - o.s.b.w.e.tomcat.TomcatWebServer - INFO - Tomcat started on port 20254 (http) with context path '/bookthymeleaf'
+2024-05-30 17:28:03 - com.book.BookApplication - INFO - Started BookApplication in 0.472 seconds (process running for 46881.261)
+2024-05-30 17:28:03 - o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - INFO - Condition evaluation unchanged
