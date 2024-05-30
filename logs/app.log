@@ -251,3 +251,18 @@ org.attoparser.ParseException: (Line = 91, Column = 22) Incomplete structure: "<
 2024-05-30 17:28:03 - o.s.b.w.e.tomcat.TomcatWebServer - INFO - Tomcat started on port 20254 (http) with context path '/bookthymeleaf'
 2024-05-30 17:28:03 - com.book.BookApplication - INFO - Started BookApplication in 0.472 seconds (process running for 46881.261)
 2024-05-30 17:28:03 - o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - INFO - Condition evaluation unchanged
+2024-05-30 17:31:33 - o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - INFO - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-05-30 17:31:33 - o.a.coyote.http11.Http11NioProtocol - INFO - Stopping ProtocolHandler ["http-nio-20254"]
+2024-05-30 17:31:33 - com.book.BookApplication - INFO - Starting BookApplication using Java 17.0.10 with PID 49392 (C:\pleiades\2023-12\workspace\book\target\classes started by 59220 in C:\pleiades\2023-12\workspace\book)
+2024-05-30 17:31:33 - com.book.BookApplication - INFO - No active profile set, falling back to 1 default profile: "default"
+2024-05-30 17:31:33 - o.s.b.w.e.tomcat.TomcatWebServer - INFO - Tomcat initialized with port 20254 (http)
+2024-05-30 17:31:33 - o.a.coyote.http11.Http11NioProtocol - INFO - Initializing ProtocolHandler ["http-nio-20254"]
+2024-05-30 17:31:33 - o.a.catalina.core.StandardService - INFO - Starting service [Tomcat]
+2024-05-30 17:31:33 - o.a.catalina.core.StandardEngine - INFO - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-30 17:31:33 - o.a.c.c.C.[.[.[/bookthymeleaf] - INFO - Initializing Spring embedded WebApplicationContext
+2024-05-30 17:31:33 - o.s.b.w.s.c.ServletWebServerApplicationContext - INFO - Root WebApplicationContext: initialization completed in 168 ms
+2024-05-30 17:31:34 - o.s.b.d.a.OptionalLiveReloadServer - INFO - LiveReload server is running on port 35729
+2024-05-30 17:31:34 - o.a.coyote.http11.Http11NioProtocol - INFO - Starting ProtocolHandler ["http-nio-20254"]
+2024-05-30 17:31:34 - o.s.b.w.e.tomcat.TomcatWebServer - INFO - Tomcat started on port 20254 (http) with context path '/bookthymeleaf'
+2024-05-30 17:31:34 - com.book.BookApplication - INFO - Started BookApplication in 0.353 seconds (process running for 47092.205)
+2024-05-30 17:31:34 - o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - INFO - Condition evaluation unchanged
